@@ -7,15 +7,34 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="10">
-            
+
+            <Label
+               Text="SmarTank"
+               Style="{StaticResource Headline}"
+               SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+               Text="Aquarium Monitoring System"
+               Style="{StaticResource SubHeadline}"
+               SemanticProperties.HeadingLevel="Level2"
+               SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+               x:Name="CounterBtn"
+               Text="Start New Tank" 
+               FontSize="25"
+               Clicked="OnCounterClicked"
+               HorizontalOptions="Center"
+               Margin="25"/>
+
             <Button 
-               x:Name ="NewTank"
-               Text="Start New Tank"
+               x:Name ="CurTank"
+               Text="Current Tank"
                FontSize="25"
                VerticalOptions="Center"
                HorizontalOptions="Center"
-               Margin="100"
-               Clicked="StartNewTank" />
+               Margin="25"
+               Clicked="ContCurrTank" />
             
             <Image
                 Source="goldfish.jpg"
@@ -27,24 +46,7 @@
             <!-- Semantic Properties Description attached property represents a short, descriptive string that a screen reader uses to announce an element
                     (I dont think this is necessary for what we are doing)-->
             <!-- Aspect property controls how an image or shape is scaled to fit a display area -->
-                
-            <Label
-                Text="Hello, World!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                FontSize="25"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+               
 
         </VerticalStackLayout>
     </ScrollView>
