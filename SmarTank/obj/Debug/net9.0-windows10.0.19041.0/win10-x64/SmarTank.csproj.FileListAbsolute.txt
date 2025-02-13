@@ -477,3 +477,18 @@ C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.1
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\bubbles.scale-100.jpg
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\bubbles.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\SmarTank.csproj.AssemblyReference.cache
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\SmarTank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\SmarTank.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\refint\SmarTank.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\SmarTank.pdb

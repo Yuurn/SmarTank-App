@@ -11,7 +11,10 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="NewPage1.xaml">
+    <MauiXaml Update="SmarTank Setup.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Tutorial.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

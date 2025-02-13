@@ -9,7 +9,7 @@
             InitializeComponent();
         }
 
-        private async void OnCounterClicked(object sender, EventArgs e)
+        private async void ContNewTank(object sender, EventArgs e)
         {
             //  count++;
 
@@ -20,11 +20,11 @@
 
             //SemanticScreenReader.Announce(CounterBtn.Text);
 
-            await Navigation.PushAsync(new NewPage1());
+            await Navigation.PushAsync(new Tutorial());
 
         }
 
-        private void ContCurrTank(object sender, EventArgs e)
+        private void ContCurTank(object sender, EventArgs e)
         {
 
            

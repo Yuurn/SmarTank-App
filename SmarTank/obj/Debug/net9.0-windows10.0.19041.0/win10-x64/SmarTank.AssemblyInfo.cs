@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmarTank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1a8c817b01bd81f0070b9eac06abdcf864d7c568")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+abf3d88c17c518bd74693baee45a4f9c8b4fc180")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmarTank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmarTank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

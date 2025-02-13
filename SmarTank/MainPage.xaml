@@ -20,10 +20,10 @@
                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
-               x:Name="CounterBtn"
+               x:Name="NewTank"
                Text="Start New Tank" 
                FontSize="25"
-               Clicked="OnCounterClicked"
+               Clicked="ContNewTank"
                HorizontalOptions="Center"
                Margin="25"/>
 
@@ -34,7 +34,7 @@
                VerticalOptions="Center"
                HorizontalOptions="Center"
                Margin="25"
-               Clicked="ContCurrTank" />
+               Clicked="ContCurTank" />
             
             <Image
                 Source="goldfish.jpg"
