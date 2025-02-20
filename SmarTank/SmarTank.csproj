@@ -71,6 +71,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Parameters.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="SmarTank Setup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -3,118 +3,110 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmarTank.SmarTank_Setup"
              Title="SmarTank_Setup">
-
-    <Grid>
-        <!--Background Image-->
-        <Image
+    <VerticalStackLayout>
+        <Grid>
+            <!--Background Image-->
+            <Image
         Source="bubbles3.jpg" 
         Aspect="AspectFill"
         HorizontalOptions="FillAndExpand"
         VerticalOptions="FillAndExpand"/>
 
-        <!--Documentation for using Grid https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/grid?view=net-maui-9.0-->
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Label 
+            <!--Documentation for using Grid https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/grid?view=net-maui-9.0-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label 
                Grid.Row="0" Grid.Column="0"
                Text="PH Sensor Setup:"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
-            <BoxView Grid.Column="1" Grid.Row="0" Color="Gray" />
-            <Label Grid.Column="1"
+                <BoxView Grid.Column="1" Grid.Row="0" Color="Gray" />
+                <Label Grid.Column="1"
                 Text="Image of PH sensor"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="1"
+                <BoxView Grid.Row="1"
                 Color="Teal" />
-            <Label Grid.Row="1"
+                <Label Grid.Row="1"
                 Text="TDS Sensor Setup:"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="1"
+                <BoxView Grid.Row="1"
                 Grid.Column="1"
                 Color="Purple" />
-            <Label Grid.Row="1"
+                <Label Grid.Row="1"
                 Grid.Column="1"
                 Text="Image of TDS sensor"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="2"
+                <BoxView Grid.Row="2"
                 Grid.Column="0"
                 Color="Red" />
-            <Label Grid.Row="2"
+                <Label Grid.Row="2"
                 Grid.Column="0"
                 Text="Color Sensor Setup:"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="2"
+                <BoxView Grid.Row="2"
                 Grid.Column="1"
                 Color="cyan" />
-            <Label Grid.Row="2"
+                <Label Grid.Row="2"
                 Grid.Column="1"
                 Text="Image of Color Sensor"
                 HorizontalOptions="Center"
-                VerticalOptions="Center" /> 
-            <BoxView Grid.Row="2"
+                VerticalOptions="Center" />
+                <BoxView Grid.Row="2"
                 Grid.Column="0"
                 Color="Red" />
-            <Label Grid.Row="2"
+                <Label Grid.Row="2"
                 Grid.Column="0"
                 Text="Color Sensor Setup:"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="2"
+                <BoxView Grid.Row="2"
                 Grid.Column="1"
                 Color="Cyan" />
-            <Label Grid.Row="2"
+                <Label Grid.Row="2"
                 Grid.Column="1"
                 Text="Image of Temperature Sensor"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="3"
+                <BoxView Grid.Row="3"
                 Grid.Column="0"
                 Color="Green" />
-            <Label Grid.Row="3"
+                <Label Grid.Row="3"
                 Grid.Column="0"
                 Text="Color Sensor Setup:"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="3"
+                <BoxView Grid.Row="3"
                 Grid.Column="1"
                 Color="Teal" />
-            <Label Grid.Row="3"
+                <Label Grid.Row="3"
                 Grid.Column="1"
                 Text="Image of Color Sensor"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <BoxView Grid.Row="4"
-                 Grid.ColumnSpan="2"
-                 Color="Teal" />
-            <Button 
-                Grid.Row="4"
-                Grid.ColumnSpan="2"
-                x:Name ="NextSetUp"
-                Text="Next Set Up"
-                FontSize="25"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Margin="25"
-                Clicked="NextSetUp" />    
 
+            </Grid>
 
         </Grid>
-        
-    </Grid>
-    
-    
-    
+    <Button
+    x:Name="ToParameters"
+    Text="Finish Tank Setup" 
+    FontSize="15"
+    Clicked="ToParams"
+    HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+
 </ContentPage>
