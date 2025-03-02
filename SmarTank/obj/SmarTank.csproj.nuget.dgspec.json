@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\SmarTank.csproj": {}
+    "C:\\Users\\kvond\\source\\repos\\APP SMARTANK\\SmarTank\\SmarTank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\SmarTank.csproj": {
+    "C:\\Users\\kvond\\source\\repos\\APP SMARTANK\\SmarTank\\SmarTank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\SmarTank.csproj",
+        "projectUniqueName": "C:\\Users\\kvond\\source\\repos\\APP SMARTANK\\SmarTank\\SmarTank.csproj",
         "projectName": "SmarTank",
-        "projectPath": "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\SmarTank.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\obj\\",
+        "projectPath": "C:\\Users\\kvond\\source\\repos\\APP SMARTANK\\SmarTank\\SmarTank.csproj",
+        "packagesPath": "C:\\Users\\kvond\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kvond\\source\\repos\\APP SMARTANK\\SmarTank\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kvond\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,11 +38,11 @@
             "targetAlias": "net9.0-android",
             "projectReferences": {}
           },
-          "net9.0-ios18.1": {
+          "net9.0-ios18.2": {
             "targetAlias": "net9.0-ios",
             "projectReferences": {}
           },
-          "net9.0-maccatalyst18.1": {
+          "net9.0-maccatalyst18.2": {
             "targetAlias": "net9.0-maccatalyst",
             "projectReferences": {}
           },
@@ -103,7 +103,7 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         },
-        "net9.0-ios18.1": {
+        "net9.0-ios18.2": {
           "targetAlias": "net9.0-ios",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
@@ -142,7 +142,7 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         },
-        "net9.0-maccatalyst18.1": {
+        "net9.0-maccatalyst18.2": {
           "targetAlias": "net9.0-maccatalyst",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
