@@ -1,4 +1,8 @@
 runtimes\win-x64\native\WebView2Loader.dll
+Eracake.ttf
+FluentUI.cs
+OpenSans-Regular.ttf
+OpenSans-Semibold.ttf
 appicon.ico
 appiconLargeTile.scale-100.png
 appiconLargeTile.scale-125.png
@@ -45,13 +49,18 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+backgroundtank.scale-100.jpg
 bubbles.scale-100.jpg
 bubbles2.scale-100.jpg
 bubbles3.scale-100.jpg
+cutefish.scale-100.jpg
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
 goldfish.scale-100.jpg
+ph.scale-100.jpg
+tds.scale-100.jpg
+temp.scale-100.jpg
 AboutAssets.txt

@@ -24,10 +24,10 @@
 
         }
 
-        private void ContCurTank(object sender, EventArgs e)
+        private async void ContCurTank(object sender, EventArgs e)
         {
 
-           
+            await Navigation.PushAsync(new Parameters());
         }
 
     }

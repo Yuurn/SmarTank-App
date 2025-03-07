@@ -6,4 +6,9 @@ public partial class Parameters : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void ToLog(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new TestingLog());
+
+    }
 }

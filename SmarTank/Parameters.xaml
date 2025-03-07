@@ -3,10 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmarTank.Parameters"
              Title="Parameters">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Image
+            Source="cutefish.jpg" 
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"/>
+        <StackLayout Padding="20">
+        <Label Text="Tempurature:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center"/>
+        <Grid>
+            <BoxView Color="LightBlue" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
+            <Label Text="72.9" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
+                   HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+
+        <Label Text="pH:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center" />
+        <Grid>
+            <BoxView Color="LightGreen" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
+            <Label Text="7.1" FontSize="Large" TextColor="DarkGreen" FontAttributes="Bold" 
+                   HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+
+        <Label Text="Total Dissolved Solids:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center" />
+        <Grid>
+            <BoxView Color="LightCoral" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
+            <Label Text="175" FontSize="Large" TextColor="DarkRed" FontAttributes="Bold" 
+                   HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+
+        <Label Text="Conductivity:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center"/>
+        <Grid>
+            <BoxView Color="LightGoldenrodYellow" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
+            <Label Text="250" FontSize="Large" TextColor="DarkGoldenrod" FontAttributes="Bold" 
+            HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Button
+             x:Name="toLog"
+             Text="Log Testing"
+             FontSize="20"
+             Margin="0,50,0,20"
+             HorizontalOptions="Center"
+             Clicked="ToLog"/>
+
+        <Button
+             x:Name="toCamera"
+             Text="Camera"
+             FontSize="20"
+             Margin="0,50,0,20"
+             HorizontalOptions="Center"/>   
+
+
+        </StackLayout>
+    </Grid>
 </ContentPage>

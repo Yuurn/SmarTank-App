@@ -77,6 +77,9 @@
 	  <MauiXaml Update="SmarTank Setup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="TestingLog.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tutorial.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

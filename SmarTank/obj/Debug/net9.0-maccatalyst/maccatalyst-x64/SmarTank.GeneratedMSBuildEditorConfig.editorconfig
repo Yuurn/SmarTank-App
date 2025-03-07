@@ -60,6 +60,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = SmarTank.SmarTank Setup.xa
 build_metadata.AdditionalFiles.TargetPath = SmarTank Setup.xaml
 build_metadata.AdditionalFiles.RelativePath = SmarTank Setup.xaml
 
+[C:/Users/kvond/source/repos/APP SMARTANK/SmarTank/TestingLog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmarTank.TestingLog.xaml
+build_metadata.AdditionalFiles.TargetPath = TestingLog.xaml
+build_metadata.AdditionalFiles.RelativePath = TestingLog.xaml
+
 [C:/Users/kvond/source/repos/APP SMARTANK/SmarTank/Tutorial.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SmarTank.Tutorial.xaml

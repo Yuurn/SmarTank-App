@@ -17,6 +17,9 @@
     <MauiXaml Update="SmarTank Setup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="TestingLog.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Tutorial.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -608,3 +608,9 @@ C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\m
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\SmarTank.pdb
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\SmarTank.genruntimeconfig.cache
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\SmarTank.dll
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\ph.jpg
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tds.jpg
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\temp.jpg
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\backgroundtank.jpg
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cutefish.jpg
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Eracake.ttf
