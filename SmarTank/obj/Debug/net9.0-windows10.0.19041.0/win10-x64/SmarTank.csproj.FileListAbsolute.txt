@@ -950,3 +950,32 @@ C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.1
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ph.scale-100.jpg
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\tds.scale-100.jpg
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\temp.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Eracake.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\FluentUI.cs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\OpenSans-Regular.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\OpenSans-Semibold.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-100.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-125.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-150.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-200.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\splashSplashScreen.scale-400.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\cutefish.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\temp.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\ph.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\backgroundtank.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\tds.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.BLE.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\Eracake.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\FluentUI.cs
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cutefish.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\temp.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ph.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundtank.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\tds.scale-100.jpg

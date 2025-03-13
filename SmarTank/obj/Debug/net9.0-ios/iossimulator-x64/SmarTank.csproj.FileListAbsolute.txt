@@ -636,3 +636,11 @@ C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-ios\iossimula
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\ph.jpg
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\temp.jpg
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\f\Eracake.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\build-signature\signature
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\cutefish.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\backgroundtank.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\ph.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\temp.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\tds.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\f\Eracake.ttf
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-ios\iossimulator-x64\Plugin.BLE.dll
