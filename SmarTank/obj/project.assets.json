@@ -452,7 +452,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -4049,7 +4049,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -6628,7 +6628,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -9207,7 +9207,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -11738,7 +11738,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -14317,7 +14317,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -16397,7 +16397,7 @@
         }
       }
     },
-    "net9.0-ios18.2": {
+    "net9.0-ios18.1": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "compile": {
@@ -16805,7 +16805,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -18012,7 +18012,7 @@
         }
       }
     },
-    "net9.0-ios18.2/android-arm64": {
+    "net9.0-ios18.1/android-arm64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "compile": {
@@ -18420,7 +18420,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -18609,7 +18609,7 @@
         }
       }
     },
-    "net9.0-ios18.2/android-x64": {
+    "net9.0-ios18.1/android-x64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "compile": {
@@ -19017,7 +19017,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -19206,7 +19206,7 @@
         }
       }
     },
-    "net9.0-ios18.2/ios-arm64": {
+    "net9.0-ios18.1/ios-arm64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "compile": {
@@ -19614,7 +19614,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -19755,7 +19755,7 @@
         }
       }
     },
-    "net9.0-ios18.2/maccatalyst-x64": {
+    "net9.0-ios18.1/maccatalyst-x64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "compile": {
@@ -20163,7 +20163,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20352,7 +20352,7 @@
         }
       }
     },
-    "net9.0-ios18.2/win10-x64": {
+    "net9.0-ios18.1/win10-x64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "compile": {
@@ -20760,7 +20760,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20901,7 +20901,7 @@
         }
       }
     },
-    "net9.0-maccatalyst18.2": {
+    "net9.0-maccatalyst18.1": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "dependencies": {
@@ -21324,7 +21324,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -22544,7 +22544,7 @@
         }
       }
     },
-    "net9.0-maccatalyst18.2/android-arm64": {
+    "net9.0-maccatalyst18.1/android-arm64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "dependencies": {
@@ -22967,7 +22967,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -23169,7 +23169,7 @@
         }
       }
     },
-    "net9.0-maccatalyst18.2/android-x64": {
+    "net9.0-maccatalyst18.1/android-x64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "dependencies": {
@@ -23592,7 +23592,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -23794,7 +23794,7 @@
         }
       }
     },
-    "net9.0-maccatalyst18.2/ios-arm64": {
+    "net9.0-maccatalyst18.1/ios-arm64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "dependencies": {
@@ -24217,7 +24217,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -24371,7 +24371,7 @@
         }
       }
     },
-    "net9.0-maccatalyst18.2/maccatalyst-x64": {
+    "net9.0-maccatalyst18.1/maccatalyst-x64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "dependencies": {
@@ -24794,7 +24794,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -24996,7 +24996,7 @@
         }
       }
     },
-    "net9.0-maccatalyst18.2/win10-x64": {
+    "net9.0-maccatalyst18.1/win10-x64": {
       "InTheHand.Net.Bluetooth/4.2.1": {
         "type": "package",
         "dependencies": {
@@ -25419,7 +25419,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -32355,10 +32355,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/9.0.3": {
-      "sha512": "1rqGTfubVg0qj2PsK6esyq3PIxtYJYrN3LsYUV9RrvH3anmt3fT3ozYdAZZH4U8JU/pt5pPIUk8NBSu26wtekA==",
+    "Microsoft.NET.ILLink.Tasks/9.0.2": {
+      "sha512": "+KFnCLVPicEq99ko0tq+ycTvNLXHw0tImmTZjPloB/DOFLPT56KLfk5aS7wbgXRPzYhXTTBYLGaABea5mke77w==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/9.0.3",
+      "path": "microsoft.net.illink.tasks/9.0.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -32372,7 +32372,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.9.0.3.nupkg.sha512",
+        "microsoft.net.illink.tasks.9.0.2.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -35762,25 +35762,25 @@
       "InTheHand.Net.Bluetooth >= 4.2.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.2",
       "Plugin.BluetoothClassic >= 1.1.5",
       "System.IO.Ports >= 9.0.3",
       "Xamarin.Essentials >= 1.6.1"
     ],
-    "net9.0-ios18.2": [
+    "net9.0-ios18.1": [
       "InTheHand.Net.Bluetooth >= 4.2.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.2",
       "Plugin.BluetoothClassic >= 1.1.5",
       "System.IO.Ports >= 9.0.3",
       "Xamarin.Essentials >= 1.6.1"
     ],
-    "net9.0-maccatalyst18.2": [
+    "net9.0-maccatalyst18.1": [
       "InTheHand.Net.Bluetooth >= 4.2.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.2",
       "Plugin.BluetoothClassic >= 1.1.5",
       "System.IO.Ports >= 9.0.3",
       "Xamarin.Essentials >= 1.6.1"
@@ -35795,24 +35795,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kvond\\.nuget\\packages\\": {},
+    "C:\\Users\\Owner\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kvond\\source\\repos\\APP_SMARTANK\\SmarTank\\SmarTank.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\SmarTank.csproj",
       "projectName": "SmarTank",
-      "projectPath": "C:\\Users\\kvond\\source\\repos\\APP_SMARTANK\\SmarTank\\SmarTank.csproj",
-      "packagesPath": "C:\\Users\\kvond\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kvond\\source\\repos\\APP_SMARTANK\\SmarTank\\obj\\",
+      "projectPath": "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\SmarTank.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owner\\Source\\Repos\\SmarTank-App\\SmarTank\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kvond\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -35832,11 +35832,11 @@
           "targetAlias": "net9.0-android",
           "projectReferences": {}
         },
-        "net9.0-ios18.2": {
+        "net9.0-ios18.1": {
           "targetAlias": "net9.0-ios",
           "projectReferences": {}
         },
-        "net9.0-maccatalyst18.2": {
+        "net9.0-maccatalyst18.1": {
           "targetAlias": "net9.0-maccatalyst",
           "projectReferences": {}
         },
@@ -35876,7 +35876,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.3, )",
+            "version": "[9.0.2, )",
             "autoReferenced": true
           },
           "Plugin.BluetoothClassic": {
@@ -35911,9 +35911,9 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       },
-      "net9.0-ios18.2": {
+      "net9.0-ios18.1": {
         "targetAlias": "net9.0-ios",
         "dependencies": {
           "InTheHand.Net.Bluetooth": {
@@ -35931,7 +35931,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.3, )",
+            "version": "[9.0.2, )",
             "autoReferenced": true
           },
           "Plugin.BluetoothClassic": {
@@ -35966,9 +35966,9 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       },
-      "net9.0-maccatalyst18.2": {
+      "net9.0-maccatalyst18.1": {
         "targetAlias": "net9.0-maccatalyst",
         "dependencies": {
           "InTheHand.Net.Bluetooth": {
@@ -35986,7 +35986,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.3, )",
+            "version": "[9.0.2, )",
             "autoReferenced": true
           },
           "Plugin.BluetoothClassic": {
@@ -36022,7 +36022,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0-windows10.0.19041": {
         "targetAlias": "net9.0-windows10.0.19041.0",
@@ -36077,7 +36077,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

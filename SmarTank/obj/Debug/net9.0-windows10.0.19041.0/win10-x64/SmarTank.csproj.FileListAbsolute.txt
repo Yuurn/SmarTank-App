@@ -961,7 +961,6 @@ C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.1
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\ph.scale-100.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\backgroundtank.scale-100.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\tds.scale-100.jpg
-C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.BLE.dll
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
@@ -977,3 +976,7 @@ C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.1
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundtank.scale-100.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\tds.scale-100.jpg
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.BLE.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\InTheHand.Net.Bluetooth.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.BluetoothClassic.Abstractions.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\System.IO.Ports.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Xamarin.Essentials.dll

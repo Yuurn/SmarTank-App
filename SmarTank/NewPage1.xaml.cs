@@ -9,6 +9,7 @@ using Microsoft.Maui.Controls;
 using InTheHand.Net.Bluetooth;
 using InTheHand.Net.Sockets;
 using System.IO;
+using System.Collections;
 
 namespace SmarTank
 {
@@ -192,12 +193,36 @@ namespace SmarTank
             Console.WriteLine($"start values");
             var values = data.Split(',');
 
+            double ph = 6.5;
+            string phS = ph.ToString();
             if (values.Length >= 4)
             {
                 TemperatureLabel.Text = values[0] + " °F";
-                PHLabel.Text = values[1];
+                PHLabel.Text = "90";
                 TDSLabel.Text = values[2] + " ppm";
                 ConductivityLabel.Text = values[3] + " μS/cm";
+
+
+                if (String.Compare(values[0], (8).ToString()) > 0)  //greater than 8 for ph
+                {
+                    DisplayAlert("Warninig", "Too low alert, perform 25% water change. Natural Solution: Add crushed coral and increase aeration. \n"
+                                + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
+                }
+                else if (String.Compare(values[0], ph.ToString()) > 0) //less than 6.5 for ph
+                {
+                    DisplayAlert("Warning", "Too high alert, perform 25% water change. Natural Solution: Add driftwood or peat moss."
+                                + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
+                }
+
+
+
+
+
+
+
+
+
+
             }
             else
             {

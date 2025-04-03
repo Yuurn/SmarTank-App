@@ -9,9 +9,15 @@
     ".NETCoreApp,Version=v9.0/win10-x64": {
       "SmarTank/1.0": {
         "dependencies": {
+          "InTheHand.Net.Bluetooth": "4.2.1",
           "Microsoft.Extensions.Logging.Debug": "9.0.0",
           "Microsoft.Maui.Controls": "9.0.14",
-          "Plugin.BLE": "3.1.0",
+          "Plugin.BluetoothClassic": "1.1.5",
+          "System.IO.Ports": "9.0.3",
+          "Xamarin.Essentials": "1.6.1",
+          "Microsoft.Maui.Controls.HotReload.Forms": "17.0.0.0",
+          "Microsoft.VisualStudio.DesignTools.MobileTapContracts": "17.0.0.0",
+          "Microsoft.VisualStudio.DesignTools.TapContract": "17.0.0.0",
           "Microsoft.Web.WebView2.Core.Projection": "1.0.2792.45",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.57"
         },
@@ -28,6 +34,14 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.48161"
+          }
+        }
+      },
+      "InTheHand.Net.Bluetooth/4.2.1": {
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InTheHand.Net.Bluetooth.dll": {
+            "assemblyVersion": "4.2.1.0",
+            "fileVersion": "4.2.1.0"
           }
         }
       },
@@ -442,11 +456,98 @@
           }
         }
       },
-      "Plugin.BLE/3.1.0": {
+      "Plugin.BluetoothClassic/1.1.5": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
         "runtime": {
-          "lib/net8.0-windows10.0.19041/Plugin.BLE.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.0.0"
+          "lib/netstandard2.0/Plugin.BluetoothClassic.Abstractions.dll": {
+            "assemblyVersion": "1.1.5.0",
+            "fileVersion": "1.1.5.0"
+          }
+        }
+      },
+      "runtime.android-arm.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.android-x64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.android-x86.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-arm.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-bionic-x64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-musl-arm.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-musl-arm64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-musl-x64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.linux-x64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.maccatalyst-x64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.native.System.IO.Ports/9.0.3": {
+        "dependencies": {
+          "runtime.android-arm.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.android-arm64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.android-x64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.android-x86.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-bionic-x64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-musl-arm.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-musl-arm64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-musl-x64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.maccatalyst-x64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "9.0.3",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "9.0.3"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/9.0.3": {},
+      "runtime.osx-x64.runtime.native.System.IO.Ports/9.0.3": {},
+      "System.IO.Ports/9.0.3": {
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "9.0.3"
+        },
+        "runtime": {
+          "runtimes/win/lib/net9.0/System.IO.Ports.dll": {
+            "assemblyVersion": "9.0.0.3",
+            "fileVersion": "9.0.325.11113"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Numerics.Vectors/4.5.0": {},
+      "Xamarin.Essentials/1.6.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Maui.Controls.HotReload.Forms/17.0.0.0": {
+        "runtime": {
+          "Microsoft.Maui.Controls.HotReload.Forms.dll": {
+            "assemblyVersion": "17.0.0.0",
+            "fileVersion": "17.12.40308.65294"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.DesignTools.MobileTapContracts/17.0.0.0": {
+        "runtime": {
+          "Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll": {
+            "assemblyVersion": "17.0.0.0",
+            "fileVersion": "17.12.40308.65294"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.DesignTools.TapContract/17.0.0.0": {
+        "runtime": {
+          "Microsoft.VisualStudio.DesignTools.TapContract.dll": {
+            "assemblyVersion": "17.0.0.0",
+            "fileVersion": "17.12.40308.65294"
           }
         }
       },
@@ -470,6 +571,13 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "InTheHand.Net.Bluetooth/4.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DewFw5IwUSjEO3k5Z6QadzO3Nsfj8DjG7D0tGe6jXaU5lvDgVJiuB1piEwGjHdAmB35WXkirCo2kEPHNaT9Ktg==",
+      "path": "inthehand.net.bluetooth/4.2.1",
+      "hashPath": "inthehand.net.bluetooth.4.2.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/9.0.0": {
       "type": "package",
@@ -632,12 +740,174 @@
       "path": "microsoft.windowsappsdk/1.6.240923002",
       "hashPath": "microsoft.windowsappsdk.1.6.240923002.nupkg.sha512"
     },
-    "Plugin.BLE/3.1.0": {
+    "Plugin.BluetoothClassic/1.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vKwCqysb0FvPsF2pmNL5Qdw2WI+GwlUyF6U56Au6F7y3f2cnhec9RWD1XZg74zRk10LcGibwiRXoJLl5ry8XHw==",
-      "path": "plugin.ble/3.1.0",
-      "hashPath": "plugin.ble.3.1.0.nupkg.sha512"
+      "sha512": "sha512-/asiHnF/lmAvuaHeotqcL7cwmP9U/B/F60ZBRnUbJMF2N+A8dWApuXzwhfzpTBc2J0rUYdev9BiFBR7uWcOOrQ==",
+      "path": "plugin.bluetoothclassic/1.1.5",
+      "hashPath": "plugin.bluetoothclassic.1.1.5.nupkg.sha512"
+    },
+    "runtime.android-arm.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rVnCXT1tcplWcXmmLS6SnRRR5i7/TirmQkHxxDZarT/MfNRJTmHgWvXXpPNCE/UFTtCIcBgdQISooCWLMQQK3A==",
+      "path": "runtime.android-arm.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.android-arm.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EehIzj4KCf6xC/+yEGRj3e8XgrbXeBREQnYZb+Q4Alxn+hbnlrd4UrHl0ezts4wgZc0SFvUnJ/dHOg7fU200ag==",
+      "path": "runtime.android-arm64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.android-arm64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.android-x64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qX8a/zLbo2UQ4c9qHsxXi2h7SsG/Ewr/vf2kaqvleZuMGmZKfKZGYZ4jPl/uSdPctmNopQpExmHLLOslkWdPUA==",
+      "path": "runtime.android-x64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.android-x64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.android-x86.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-glMfcEbRWC/p3D/3kKXZiBazF3DMR+K0/9SC3/SOXSyZ2UMR5lZ1odEbVUBg2V66lYRl3fOiQqMUgRMGPWTZ+g==",
+      "path": "runtime.android-x86.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.android-x86.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-355m78rFB2OcMb/BEKZKMo9FJnFx818yu8jTNgWq5LFTdGxj3Te1qCV63U2st/aGtdCXv6zlC2QZfYmJicdjrw==",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-arm.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hxhstO0/uFEA1p5HQL68gHQc/HWiAWMP/QxldT6U6giA4Wpw4+OC1RYc+CykEchK3opA1ax/h8al0L081vR5aA==",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-arm64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Uj4l/sHqNawXK6Ba5Ooqpd1Lutjx6ecrICE4/5GYbRwjd559+SWny6Zj1ptrh/rMIvZVs/ZaTvRRXj0rzV6wQ==",
+      "path": "runtime.linux-bionic-arm64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-bionic-x64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iAv3quIqwA14WVHj+XQjzuQQw1TA4Kv9zL3Xn6yLCKxb4Wool43g+yq10S8DrKGGlAHS3kzopBbDlcMtIsJYbw==",
+      "path": "runtime.linux-bionic-x64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-musl-arm.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XXepPP0fxzNqVeu63ZyDhGoynvwJdxLjMN/aLZgow1xFCitiUkf2nQVXEEpdKaUGTagmfHWiEeeHKyq5LSFnsg==",
+      "path": "runtime.linux-musl-arm.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-musl-arm64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q8s1ft1EMdqmNTlePVQ7TKHZfMdtoBNygzzETo661enxdDnC4mwOX4Mpw/jguE8A3lI2ZKKU0UTdLJI8txPxTQ==",
+      "path": "runtime.linux-musl-arm64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-musl-x64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BExz1oN0AU7Ep/KOZKWy7fbCVt4mvDCXk765gSqYL/cLt2RFUjOaGezHZ18HGW7Y8cEbzK9rX7KzhfXkk8RgzA==",
+      "path": "runtime.linux-musl-x64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fPu7SVzdlMxIGVfpnt5z5GZiWBwPekscWKU+apaI8pr+YpDJtVqVc6PIPa8bfEeFLZmaENCr3TKh4++Ir4YoYg==",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.linux-x64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z1J5iU5KG4JRz0tJIxmmQOJOKWFA+gd+EXmE5yMOoLcKXshRd701+I3zEv8Ih7saGU/kjKlGyEQHida0bOklwQ==",
+      "path": "runtime.maccatalyst-arm64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.maccatalyst-x64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H2tw9b2J/PiFprvczQzvUFcagsVG4vLTIxX6zwQKrK3tjorH3HM578Hyby3fScEGp7esRN5837BwUPes5RcWkQ==",
+      "path": "runtime.maccatalyst-x64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QHtj01jZiulCmF34DYf1E1dwREdkegZJWZmdQYqA5t6ZDeWAdYJhNo7w0gYczg1D6FE6HzoPWbeIsGG/HXdILg==",
+      "path": "runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-475lxmcekLu+mLW63DNcgV001QsMcRDvlo275w84yTwAw5uGtHWxwMhP1IN1JGLU5UrW5V4eAVbYtxFX4CbDMg==",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.osx-arm64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "runtime.osx-x64.runtime.native.System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cmkhu63vnhJGHKx9tCb+HgkweCCv9018GTHHnxsky9WbqKG8eRno4gs7U0SHIQJ0VWg7r7zYWVQ5uVT1v07phQ==",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/9.0.3",
+      "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "System.IO.Ports/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5YB+OH+rbXqjvZneGDbFG2RWMNkYMFaJq9YBu1IWE/pdEcqu/y2dQw32V6OG7Q8Da2HC9zaCqS0ri89cpqSSwg==",
+      "path": "system.io.ports/9.0.3",
+      "hashPath": "system.io.ports.9.0.3.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
+      "path": "xamarin.essentials/1.6.1",
+      "hashPath": "xamarin.essentials.1.6.1.nupkg.sha512"
+    },
+    "Microsoft.Maui.Controls.HotReload.Forms/17.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualStudio.DesignTools.MobileTapContracts/17.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualStudio.DesignTools.TapContract/17.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.Web.WebView2.Core.Projection/1.0.2792.45": {
       "type": "reference",

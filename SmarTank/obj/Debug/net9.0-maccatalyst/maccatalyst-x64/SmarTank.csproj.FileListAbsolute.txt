@@ -620,4 +620,10 @@ C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-maccatalyst\m
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cutefish.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\backgroundtank.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Eracake.ttf
-C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Plugin.BLE.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\InTheHand.Net.Bluetooth.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Linux.Bluetooth.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Plugin.BluetoothClassic.Abstractions.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IO.Ports.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Tmds.DBus.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Xamarin.Essentials.dll
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libSystem.IO.Ports.Native.dylib
