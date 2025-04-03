@@ -11,7 +11,7 @@
             VerticalOptions="FillAndExpand"/>
 
         <VerticalStackLayout Padding="70,0" Spacing="10">
-            <Label Text="Log Test Kit Results" FontSize="28" HorizontalOptions="Center" />
+            <Label Text="Log Test Kit Results" FontSize="22" HorizontalOptions="Center" />
 
             <Picker x:Name="myPicker" StyleId="pick1" Title="Log pH" HorizontalOptions="Center" FontSize="20">
                 <Picker.ItemsSource>

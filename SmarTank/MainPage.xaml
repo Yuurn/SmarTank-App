@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmarTank.MainPage">
     <Grid>
+       
         <!-- Background Image -->
         <Image
                 Source="backgroundtank.jpg" 
                 Aspect="AspectFill"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"/>
+        
         <ScrollView>
             <VerticalStackLayout
                 Padding="70"
@@ -17,7 +19,7 @@
                 <Label
                     Text="SmarTank"
                     Style="{StaticResource Headline}"
-                    FontSize="52"
+                    FontSize="40"
                     FontAttributes="Bold"
                     FontFamily="bubbleFont"
                     SemanticProperties.HeadingLevel="Level1" />
@@ -44,7 +46,15 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     Margin="50"
-                    Clicked="ContCurTank" /> 
+                    Clicked="ContCurTank" />
+                <Button 
+                    x:Name ="checkbt"
+                    Text="BlueTooth Check"
+                    FontSize="18"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Margin="0"
+                    Clicked="CheckBT" />
 
                 <!-- Alignment of views in layout are controlled with -->
                 <!-- Source is where the image is sourced from (must be a file)-->

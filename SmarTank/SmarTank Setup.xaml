@@ -95,10 +95,10 @@
 
         <!-- Button to go to next page with sensor parameters -->
         <Button Grid.Row="1"
-                x:Name="ToParameters"
+                x:Name="ToCycling"
                 Text="Finish Tank Setup"
                 FontSize="18"
-                Clicked="ToParams"
+                Clicked="ToCycle"
                 HorizontalOptions="Center"
                 VerticalOptions="EndAndExpand" />
     </Grid>

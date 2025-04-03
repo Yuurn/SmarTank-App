@@ -7,9 +7,9 @@ public partial class SmarTank_Setup : ContentPage
 		InitializeComponent();
 	}
 
-    private async void ToParams(object sender, EventArgs e)
+    private async void ToCycle(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Parameters());
+        await Navigation.PushAsync(new Cycle());
 
     }
 }

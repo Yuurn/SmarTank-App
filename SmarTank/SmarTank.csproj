@@ -60,9 +60,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="InTheHand.Net.Bluetooth" Version="4.2.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
-		<PackageReference Include="Plugin.BLE" Version="3.1.0" />
+	    <PackageReference Include="Plugin.BluetoothClassic" Version="1.1.5" />
+		<PackageReference Include="System.IO.Ports" Version="9.0.3" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,6 +75,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Cycle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CycleTutorial.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NewPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Parameters.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

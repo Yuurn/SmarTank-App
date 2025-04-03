@@ -829,9 +829,6 @@ C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.1
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
-C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Web.WebView2.Core.Projection.dll
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.UI.pri
 C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.UI.Xaml.Controls.pri
@@ -979,3 +976,4 @@ C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.1
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ph.scale-100.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundtank.scale-100.jpg
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\tds.scale-100.jpg
+C:\Users\kvond\source\repos\APP SMARTANK\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.BLE.dll

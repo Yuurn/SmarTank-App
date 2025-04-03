@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmarTank.CycleTutorial"
+             Title="Cycle Tutorial">
+    <Grid>
+        <!-- Background Image -->
+        <Image
+            Source="cutefish.jpg" 
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"/>
+
+
+        <VerticalStackLayout>
+            <Label 
+                Text="Cycling Tutorial"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                Text="1.	Refer to aquarium tutorial to set up tank."
+                FontSize="14"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Margin=" 10,10"/>
+            <Label
+                Text="2.	To begin the cycling process, pure ammonia and beneficial bacteria must be added. Add 2-3 drops of pure ammonia per 10 gallons and use the aquarium chemical test kit to check ammonia levels in the water. The tank should reach 2-4 ppm of ammonia. OPTIONAL Add a small amount of a fish food every other day to help the benifical bacterial grow."
+                FontSize="14"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Margin=" 10,10"/>
+      
+            <Label
+                Text="3.	Use an aquarium chemical kit to check aquarium water every other day and log results."
+                FontSize="14"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Margin=" 10,10"/>
+            <Label
+                Text="4.	Expect nitrites to rise in about 3 weeks. The levels will rise for a 3-5 days, then drop back to 0. This means you are about halfway through the cycle. Expect nitrates to rise in 4-6 weeks. At this time ammonia and nitrite should be 0 ppm. The cycle is now complete!"
+                FontSize="14"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Margin=" 10,10"/>
+            <Label
+                Text="5.	Perform a 25% water change and slowly begin to add fish. Start with a small amount of fish to avoid overloading the biological filter. Change app to maintence mode."
+                FontSize="14"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Margin=" 10,10"/>
+            <Label
+                Text="Perform 25%-50% monthly water changes. Replace filter media, but do not remove filter and completely clean. Doing that will crash your cycle and cause harm to your fish. The app will continue to monitor your aquarium closely. Enjoy!"
+                FontSize="14"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Margin=" 10,10"/>
+
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

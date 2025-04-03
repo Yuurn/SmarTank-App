@@ -5,10 +5,6 @@
              x:Class="SmarTank.Parameters"
              Title="Sensor Readings">
 
-    <ContentPage.BindingContext>
-        <local:SensorViewModel/>
-    </ContentPage.BindingContext>
-
     <Grid>
         <Image
             Source="cutefish.jpg" 
@@ -19,29 +15,29 @@
         <Label Text="Tempurature:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center"/>
         <Grid>
             <BoxView Color="LightBlue" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="Temperature: {Binding Temperature, StringFormat='Temp: {0}°C'}" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
+                <Label Text="{Binding Temperature, StringFormat='{0}°F'}" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
-        </Grid>
+            </Grid>
 
         <Label Text="pH:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center" />
         <Grid>
             <BoxView Color="LightGreen" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="pH Reading: {Binding PHReading, StringFormat='pH: {0:F2}'}" FontSize="Large" TextColor="DarkGreen" FontAttributes="Bold" 
+                <Label Text="{Binding PHReading, StringFormat='{0}'}" FontSize="Large" TextColor="DarkGreen" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
-        </Grid>
+            </Grid>
 
         <Label Text="Total Dissolved Solids:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center" />
         <Grid>
             <BoxView Color="LightCoral" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="TDS Reading: {Binding TDSReading, StringFormat='TDS: {0} ppm'}" FontSize="Large" TextColor="DarkRed" FontAttributes="Bold" 
+                <Label Text= "{Binding TDSReading, StringFormat= '{0}ppm'}" FontSize="Large" TextColor="DarkRed" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
-        </Grid>
+            </Grid>
 
         <Label Text="Conductivity:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center"/>
         <Grid>
             <BoxView Color="LightGoldenrodYellow" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="Conductivity: {Binding Conductivity, StringFormat=': {0} V'}" FontSize="Large" TextColor="DarkGoldenrod" FontAttributes="Bold" 
-            HorizontalOptions="Center" VerticalOptions="Center" />
+                <Label Text="{Binding Conductivity, StringFormat='{0}μS/cm'}" FontSize="Large" TextColor="DarkGoldenrod" FontAttributes="Bold" 
+            HorizontalOptions="Center" VerticalOptions="Center" /> 
         </Grid>
         <Button
              x:Name="toLog"
