@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
 using InTheHand.Net.Bluetooth;
 using InTheHand.Net.Sockets;
+using Microsoft.Maui.Layouts;
 
 namespace SmarTank;
 
@@ -18,6 +19,11 @@ public partial class Parameters : ContentPage
     private int _reconnectAttempts = 0;
     private bool _isReadingData = false; // Flag to control reading loop
     private Timer _timer;
+
+    bool[] TempRange = new bool[2];
+    bool[] pHRange = new bool[2];
+    bool TDSRange = false;
+    bool[] ConductivityRange = new bool[2];
     private DateTime StartTime => Preferences.Get("StartTime", DateTime.MinValue);
     private DateTime LastPopupTime
     {
@@ -253,6 +259,76 @@ public partial class Parameters : ContentPage
             PHLabel.Text = "Error";
             TDSLabel.Text = "Error";
             ConductivityLabel.Text = "Error";
+        }
+
+
+
+        if (double.TryParse(values[0], out double TempValue)) //Checking Temp values
+        {
+            if (TempValue < 70)
+            {
+                //Temp is greater than 80
+                TempRange[0] = true;
+            }
+            else if (TempValue > 80)
+            {
+                // Temp is less than 6.5
+                TempRange[1] = true;
+            }
+            else    //reset booleans for Temp values
+            {
+                TempRange[0] = false;
+                TempRange[1] = false;
+            }
+        }
+
+        if (double.TryParse(values[1], out double phValue)) //Checking PH values
+        {
+            if (phValue < 6.5)
+            {
+                // pH is less than 6.5
+                pHRange[0] = true;
+                phWarning.IsVisible = true;
+
+            }
+            if (phValue > 8)
+            {
+                // pH is greater than 8
+                pHRange[1] = true;
+                phWarning.IsVisible = true;
+            }
+            else    //reset booleans for PH values
+            {
+                pHRange[0] = false;
+                pHRange[1] = false;
+            }
+        }
+
+        if (double.TryParse(values[2], out double TDSValue)) //Checking TDS values
+        {
+            if (TDSValue < 450)
+            {
+                //TDS is less than 450
+                TDSRange = true;
+            }
+           
+            else    //reset booleans for TDS values
+            {
+                TDSRange = false;
+            }
+        }
+    }
+    private async void WarningPHTapped(object sender, EventArgs e)
+    {
+        if (pHRange[0] == true) //less than 6.5 for ph
+        {
+            await DisplayAlert("Warning", "Too high alert, perform 25% water change. Natural Solution: Add driftwood or peat moss."
+                               + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
+        }
+        else if (pHRange[1] == true)  //greater than 8 for ph
+        {
+            await DisplayAlert("Warninig", "Too low alert, perform 25% water change. Natural Solution: Add crushed coral and increase aeration. \n"
+                               + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
         }
     }
 
