@@ -11,36 +11,62 @@
             VerticalOptions="FillAndExpand"/>
 
         <Button 
+            BackgroundColor="CornflowerBlue"
             Text="Begin Cycle" 
             Clicked="OnCyclingModeClicked"
             FontSize="25"
             HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Margin="0,0,0,50"/>
-        
+            VerticalOptions="Start"
+            Margin="0,200,0,0"/>
+
         <Button 
+            BackgroundColor="CornflowerBlue"
             Text="Maintenance" 
             Clicked="OnMaintenanceModeClicked" 
             FontSize="25"
             HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Margin="0,0,0,300"/>
+            VerticalOptions="Start"
+            Margin="0,400,0,0"/>
 
         <Button 
+            BackgroundColor="CornflowerBlue"
             Text="Continue Cycle" 
             Clicked="OnContinueClicked"
             FontSize="25"
             HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Margin="0,200,0,0"/>
+            VerticalOptions="Start"
+            Margin="0,300,0,0"/>
 
         <Button 
+            BackgroundColor="ForestGreen"
             Text="Cycle Tutorial" 
             Clicked="toCycleTutorial"
             FontSize="25"
             HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Margin="0,500,0,0"/>
+            VerticalOptions="Start"
+            Margin="0,70,0,0"/>
+
+        <Button
+           BackgroundColor= "Coral"
+           x:Name="toLog"
+           Text="Log Testing"
+           FontSize="20"
+           Margin="0,0,0,130"
+           HorizontalOptions="Center"
+           VerticalOptions="End"
+           Clicked="ToLog"/>
+
+        <Button
+           BackgroundColor= "Coral"
+           x:Name="toCamera"
+           Text="Camera"
+           FontSize="20"
+           Margin="0,0,0,40"
+           HorizontalOptions="Center"
+           VerticalOptions="End"
+            Clicked="ToCam"/>
+
 
     </Grid>
+
 </ContentPage>

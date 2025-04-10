@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmarTank.NewPage1"
              Title="NewPage1">
-    
+
     <StackLayout>
         <Label Text="Temperature (°F):" />
         <Label x:Name="TemperatureLabel"

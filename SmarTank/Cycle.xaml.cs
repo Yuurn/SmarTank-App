@@ -7,9 +7,9 @@ public partial class Cycle : ContentPage
     private const string StartTimeKey = "StartTime";
     private const string LastPopupTimeKey = "LastPopupTime";
     public Cycle()
-	{
+    {
         InitializeComponent();
-	}
+    }
 
     public Mode CurrentMode
     {
@@ -35,6 +35,7 @@ public partial class Cycle : ContentPage
         CurrentMode = Mode.Cycling;
         StartTime = DateTime.Now;
         LastPopupTime = DateTime.Now;
+        await DisplayAlert("Mode Information", "Begin Cycle mode selected. Ensure all sensors are functioning properly. Parameters page will open shortly.", "OK");
         ShowPopup();
         await Navigation.PushAsync(new Parameters(CurrentMode));
     }
@@ -42,6 +43,7 @@ public partial class Cycle : ContentPage
     private async void OnMaintenanceModeClicked(object sender, EventArgs e)
     {
         CurrentMode = Mode.Maintenance;
+        await DisplayAlert("Mode Information", "Maintenance mode selected. Ensure all sensors are functioning properly. Parameters page will open shortly.", "OK");
         ShowPopup();
         await Navigation.PushAsync(new Parameters(CurrentMode));
     }
@@ -50,7 +52,7 @@ public partial class Cycle : ContentPage
     {
         if (CurrentMode == Mode.Cycling)
         {
-            await DisplayAlert("Mode Information", "Continuing cycling mode. Ensure all sensors are functioning properly.", "OK");
+            await DisplayAlert("Mode Information", "Continuing cycling mode. Ensure all sensors are functioning properly. Parameters page will open shortly.", "OK");
             await Navigation.PushAsync(new Parameters(CurrentMode));
         }
         else
@@ -65,7 +67,7 @@ public partial class Cycle : ContentPage
         string message = CurrentMode switch
         {
             Mode.Cycling => "Cycling mode is active. Add 2-3 drops of pure Ammonia per 10 gallons. Chemical test kit should indicate ammonia levels of 2-4 ppm. Add beneficial bacteria per bottle instructions.",
-            Mode.Maintenance => "Maintenance mode is active. Please ensure sensors are properly placed in aquarium.",
+            Mode.Maintenance => "Maintenance mode is active.",
             _ => "Unknown mode."
         };
 
@@ -74,9 +76,20 @@ public partial class Cycle : ContentPage
 
 
 
-     private async void toCycleTutorial(object sender, EventArgs e)
+    private async void toCycleTutorial(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new CycleTutorial());
+
+    }
+
+    private async void ToLog(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new TestingLog());
+
+    }
+    private async void ToCam(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Camera());
 
     }
 }

@@ -12,48 +12,33 @@
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand"/>
         <StackLayout Padding="20">
-        <Label Text="Tempurature:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center"/>
-        <Grid>
-            <BoxView Color="LightBlue" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="{Binding Temperature, StringFormat='{0}°F'}" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
+            <Label Text="Temperature:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center"/>
+            <Grid>
+                <BoxView Color="LightBlue" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
+                <Label x:Name="TemperatureLabel" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
             </Grid>
 
-        <Label Text="pH:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center" />
-        <Grid>
-            <BoxView Color="LightGreen" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="{Binding PHReading, StringFormat='{0}'}" FontSize="Large" TextColor="DarkGreen" FontAttributes="Bold" 
+            <Label Text="pH:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center" />
+            <Grid>
+                <BoxView Color="LightGreen" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
+                <Label x:Name="PHLabel"  FontSize="Large" TextColor="DarkGreen" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
             </Grid>
 
-        <Label Text="Total Dissolved Solids:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center" />
-        <Grid>
-            <BoxView Color="LightCoral" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text= "{Binding TDSReading, StringFormat= '{0}ppm'}" FontSize="Large" TextColor="DarkRed" FontAttributes="Bold" 
+            <Label Text="Total Dissolved Solids:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center" />
+            <Grid>
+                <BoxView Color="LightCoral" HeightRequest="50" WidthRequest="150" CornerRadius="10" />
+                <Label x:Name="TDSLabel"  FontSize="Large" TextColor="DarkRed" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
             </Grid>
 
-        <Label Text="Conductivity:" FontSize="Medium" Margin="0,20,0,10" HorizontalOptions="Center"/>
-        <Grid>
-            <BoxView Color="LightGoldenrodYellow" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
-                <Label Text="{Binding Conductivity, StringFormat='{0}μS/cm'}" FontSize="Large" TextColor="DarkGoldenrod" FontAttributes="Bold" 
-            HorizontalOptions="Center" VerticalOptions="Center" /> 
-        </Grid>
-        <Button
-             x:Name="toLog"
-             Text="Log Testing"
-             FontSize="20"
-             Margin="0,50,0,20"
-             HorizontalOptions="Center"
-             Clicked="ToLog"/>
-
-        <Button
-             x:Name="toCamera"
-             Text="Camera"
-             FontSize="20"
-             Margin="0,50,0,20"
-             HorizontalOptions="Center"/>   
-
+            <Label Text="Conductivity:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center"/>
+            <Grid>
+                <BoxView Color="LightGoldenrodYellow" HeightRequest="50" WidthRequest="170" CornerRadius="10" />
+                <Label x:Name="ConductivityLabel" FontSize="Large" TextColor="DarkGoldenrod" FontAttributes="Bold" 
+            HorizontalOptions="Center" VerticalOptions="Center" />
+            </Grid>
 
         </StackLayout>
     </Grid>

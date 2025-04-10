@@ -1,31 +1,28 @@
-﻿using Plugin.BluetoothClassic;
-using Plugin.BluetoothClassic.Abstractions;
-using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Maui.Dispatching;
-using Microsoft.Maui.Controls;
-using InTheHand.Net.Bluetooth;
+﻿using InTheHand.Net.Bluetooth;
 using InTheHand.Net.Sockets;
-using System.IO;
-using System.Collections;
+using System.Text;
 
 namespace SmarTank
 {
     public partial class NewPage1 : ContentPage
     {
-        BluetoothClient _bluetoothClient;
-        BluetoothDeviceInfo _deviceInfo;
-        System.IO.Stream _stream;
-
+        private BluetoothClient _bluetoothClient;
+        private BluetoothDeviceInfo _deviceInfo;
+        private System.IO.Stream _stream;
         private IDispatcherTimer _connectionTimer;
         private int _reconnectAttempts = 0;
+        private bool _isReadingData = false; // Flag to control reading loop
 
         public NewPage1()
         {
             InitializeComponent();
             ConnectToBluetoothAsync();
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            DisconnectBluetooth();
         }
 
         private async Task ConnectToBluetoothAsync()
@@ -83,7 +80,7 @@ namespace SmarTank
         private void KeepConnectionAlive()
         {
             _connectionTimer = Dispatcher.CreateTimer();
-            _connectionTimer.Interval = TimeSpan.FromSeconds(5);
+            _connectionTimer.Interval = TimeSpan.FromSeconds(10); // Increased interval to reduce frequency
             _connectionTimer.Tick += async (sender, e) =>
             {
                 if (_bluetoothClient.Connected)
@@ -116,8 +113,9 @@ namespace SmarTank
                 byte[] buffer = new byte[256];
                 int bytesRead;
                 StringBuilder completeData = new StringBuilder();
+                _isReadingData = true; // Set flag to true when starting to read data
 
-                while (_bluetoothClient.Connected)
+                while (_bluetoothClient?.Connected == true && _isReadingData)
                 {
                     try
                     {
@@ -155,6 +153,10 @@ namespace SmarTank
                             Console.WriteLine("Stream is not readable or is closed.");
                             break;
                         }
+
+                        // Add a small delay to prevent the loop from blocking the UI thread
+                        await Task.Delay(100); // Add delay to prevent tight looping and allow UI updates
+
                     }
                     catch (IOException ex)
                     {
@@ -184,7 +186,29 @@ namespace SmarTank
             {
                 // Dispose of the stream and client when done
                 _stream?.Dispose();
+                _stream = null; // Set to null after disposing
                 _bluetoothClient?.Dispose();
+                _bluetoothClient = null; // Set to null after disposing
+            }
+        }
+
+
+        private void DisconnectBluetooth()
+        {
+            try
+            {
+                _isReadingData = false; // Set flag to false to stop reading data
+                _connectionTimer?.Stop();
+                _stream?.Dispose();
+                _stream = null; // Set to null after disposing
+                _bluetoothClient?.Close();
+                _bluetoothClient?.Dispose();
+                _bluetoothClient = null; // Set to null after disposing
+                Console.WriteLine("Bluetooth connection closed.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in DisconnectBluetooth: {ex.Message}");
             }
         }
 
@@ -193,36 +217,12 @@ namespace SmarTank
             Console.WriteLine($"start values");
             var values = data.Split(',');
 
-            double ph = 6.5;
-            string phS = ph.ToString();
             if (values.Length >= 4)
             {
                 TemperatureLabel.Text = values[0] + " °F";
-                PHLabel.Text = "90";
+                PHLabel.Text = values[1];
                 TDSLabel.Text = values[2] + " ppm";
                 ConductivityLabel.Text = values[3] + " μS/cm";
-
-
-                if (String.Compare(values[0], (8).ToString()) > 0)  //greater than 8 for ph
-                {
-                    DisplayAlert("Warninig", "Too low alert, perform 25% water change. Natural Solution: Add crushed coral and increase aeration. \n"
-                                + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
-                }
-                else if (String.Compare(values[0], ph.ToString()) > 0) //less than 6.5 for ph
-                {
-                    DisplayAlert("Warning", "Too high alert, perform 25% water change. Natural Solution: Add driftwood or peat moss."
-                                + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
-                }
-
-
-
-
-
-
-
-
-
-
             }
             else
             {
