@@ -996,3 +996,5 @@ C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.1
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\warning.scale-100.jpg
+C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\warning.scale-100.jpg

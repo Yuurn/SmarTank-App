@@ -17,14 +17,15 @@
                 <BoxView Color="LightBlue" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
                 <Label x:Name="TemperatureLabel" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
+                <Image Source="warning.jpg"
+                    x:Name= "phWarning"
+                    IsVisible="False">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="WarningPHTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
             </Grid>
-            <Image Source="warning.jpg"
-                   x:Name= "phWarning"
-                   IsVisible="False"
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="WarningPHTapped" />
-                </Image.GestureRecognizers>
-            </Image>
+           
             <Label Text="pH:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center" />
             <Grid>
                 <BoxView Color="LightGreen" HeightRequest="50" WidthRequest="100" CornerRadius="10" />

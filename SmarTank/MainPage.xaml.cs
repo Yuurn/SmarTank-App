@@ -38,16 +38,18 @@ namespace SmarTank
                 bluetoothStatus = await Permissions.RequestAsync<Permissions.Bluetooth>();
             }
 
-            if (locationStatus == PermissionStatus.Granted && bluetoothStatus == PermissionStatus.Granted)
-            {
-                // Permissions granted, proceed with Bluetooth operations
-                await Navigation.PushAsync(new NewPage1());
-            }
-            else
-            {
-                // Permissions denied, inform the user
-                await DisplayAlert("Permission Error", "Bluetooth and Location permissions are required.", "OK");
-            }
+            //Looks like old code from NewPage1
+
+            //if (locationStatus == PermissionStatus.Granted && bluetoothStatus == PermissionStatus.Granted)
+            //{
+            //    // Permissions granted, proceed with Bluetooth operations
+            //    await Navigation.PushAsync(new NewPage1());
+            //}
+            //else
+            //{
+            //    // Permissions denied, inform the user
+            //    await DisplayAlert("Permission Error", "Bluetooth and Location permissions are required.", "OK");
+            //}
         }
     }
 }
