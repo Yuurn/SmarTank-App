@@ -95,4 +95,8 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Resources\Drawable\" />
+	</ItemGroup>
+
 </Project>

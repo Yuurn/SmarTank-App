@@ -23,7 +23,7 @@ public partial class Parameters : ContentPage
     bool[] TempRange = new bool[2];
     bool[] pHRange = new bool[2];
     bool TDSRange = false;
-    bool[] ConductivityRange = new bool[2];
+    bool ConductivityRange = false;
     private DateTime StartTime => Preferences.Get("StartTime", DateTime.MinValue);
     private DateTime LastPopupTime
     {
@@ -36,7 +36,6 @@ public partial class Parameters : ContentPage
     public Parameters(Mode mode)
     {
         InitializeComponent();
-        //  BindingContext = new SensorViewModel();
         _mode = mode;
         DisplayModeInfo();
         ConnectToBluetoothAsync();
@@ -265,71 +264,166 @@ public partial class Parameters : ContentPage
 
         if (double.TryParse(values[0], out double TempValue)) //Checking Temp values
         {
-            if (TempValue < 70)
+            if (TempValue < 60)
             {
-                //Temp is greater than 80
+                //Temp is less than 60
                 TempRange[0] = true;
+                TempRange[1] = false;
+                tempWarning.IsVisible = true;
+                tempWarningLabel.IsVisible = true;
+
             }
-            else if (TempValue > 80)
+            else if (TempValue > 85)
             {
-                // Temp is less than 6.5
+                // Temp is greater than 85
                 TempRange[1] = true;
+                TempRange[0] = false;
+                tempWarning.IsVisible = true;
+                tempWarningLabel.IsVisible = true;
             }
             else    //reset booleans for Temp values
             {
                 TempRange[0] = false;
                 TempRange[1] = false;
+                tempWarning.IsVisible = false;
+                tempWarningLabel.IsVisible = false;
             }
         }
 
-        if (double.TryParse(values[1], out double phValue)) //Checking PH values
+        if (double.TryParse(values[1], out double phValue))
         {
             if (phValue < 6.5)
             {
-                // pH is less than 6.5
+                Console.WriteLine("less than 6.5");
+                pHRange[0] = true;
+                pHRange[1] = false;
+                phWarning.IsVisible = true;
+                phWarningLabel.IsVisible = true;
+            }
+            else if (phValue > 8)
+            {
+                Console.WriteLine("greater than 8.0");
+                pHRange[1] = false;
                 pHRange[0] = true;
                 phWarning.IsVisible = true;
-
+                phWarningLabel.IsVisible = true;
             }
-            if (phValue > 8)
-            {
-                // pH is greater than 8
-                pHRange[1] = true;
-                phWarning.IsVisible = true;
-            }
-            else    //reset booleans for PH values
+            else
             {
                 pHRange[0] = false;
                 pHRange[1] = false;
+                phWarning.IsVisible = false;
+                phWarningLabel.IsVisible = false;
             }
         }
 
         if (double.TryParse(values[2], out double TDSValue)) //Checking TDS values
         {
-            if (TDSValue < 450)
+            if (TDSValue > 450)
             {
-                //TDS is less than 450
+                //TDS is greater than 450
                 TDSRange = true;
+                tdsWarning.IsVisible = true;
+                tdsWarningLabel.IsVisible = true;
             }
            
             else    //reset booleans for TDS values
             {
                 TDSRange = false;
+                tdsWarning.IsVisible = false;
+                tdsWarningLabel.IsVisible = false;
+            }
+        }
+        if (double.TryParse(values[2], out double CondValue)) //Checking TDS values
+        {
+            if (CondValue > 500)
+            {
+                //TDS is greater than 450
+                ConductivityRange = true;
+                condWarning.IsVisible = true;
+                condWarningLabel.IsVisible = true;
+            }
+
+            else    //reset booleans for TDS values
+            {
+                ConductivityRange = false;
+                condWarning.IsVisible = false;
+                condWarningLabel.IsVisible = false;
             }
         }
     }
     private async void WarningPHTapped(object sender, EventArgs e)
     {
-        if (pHRange[0] == true) //less than 6.5 for ph
+        Console.WriteLine("WarningPHTapped triggered");
+
+        if (pHRange[0]) // pH is too low
         {
-            await DisplayAlert("Warning", "Too high alert, perform 25% water change. Natural Solution: Add driftwood or peat moss."
-                               + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
+            if (_mode == Mode.Maintenance)
+            {
+                await DisplayAlert("Warning", "pH is too low! Perform a 25% water change.\n\nNatural Solution: Add driftwood or peat moss.\n\nTip: Check the pH of your tap water.", "OK");
+            }
+            else if (_mode == Mode.Cycling)
+            {
+                await DisplayAlert("Cycling Tip", "pH is slightly low — this can happen during cycling.\n\nMonitor regularly using the chemical test kit.", "OK");
+            }
         }
-        else if (pHRange[1] == true)  //greater than 8 for ph
+        else if (pHRange[1]) // pH is too high
         {
-            await DisplayAlert("Warninig", "Too low alert, perform 25% water change. Natural Solution: Add crushed coral and increase aeration. \n"
-                               + "Tip: check pH of tap water used in aquarium to ensure it’s about 7.0.", "OK");
+            if (_mode == Mode.Maintenance)
+            {
+                await DisplayAlert("Warning", "pH is too high! Perform a 25% water change.\n\nNatural Solution: Add crushed coral and increase aeration.\n\nTip: Check the pH of your tap water.", "OK");
+            }
+            else if (_mode == Mode.Cycling)
+            {
+                await DisplayAlert("Cycling Tip", "pH is slightly high — this can happen during cycling.\n\nMonitor regularly using the chemical test kit.", "OK");
+            }
         }
+    }
+    private async void WarningTDSTapped(object sender, EventArgs e)
+    {
+        Console.WriteLine("WarningTDSapped triggered");
+
+        if (TDSRange) // tds is too high
+        {
+            if (_mode == Mode.Maintenance)
+            {
+                await DisplayAlert("Warning", "Total Dissolved Solids is too high! Check Chemicals and perform a 25% water change.\n\nTip: If tank has been recently cleaned, reduce amount of food given.", "OK");
+            }
+            else if (_mode == Mode.Cycling)
+            {
+                await DisplayAlert("Cycling Tip", "Total Dissolved Solids is above the normal range — this can happen during cycling especially when ammonia and nitrites are spiking.\n\nMonitor regularly using the chemical test kit.", "OK");
+            }
+        }
+    }
+    private async void WarningCondTapped(object sender, EventArgs e)
+    {
+        Console.WriteLine("WarningCondTapped triggered");
+
+        if (ConductivityRange) // tds is too high
+        {
+            if (_mode == Mode.Maintenance)
+            {
+                await DisplayAlert("Warning", "Electrical conductivity of the water is too high! Check Chemicals and perform a 25% water change.\n\nTip: If tank has been recently cleaned, reduce amount of food given.", "OK");
+            }
+            else if (_mode == Mode.Cycling)
+            {
+                await DisplayAlert("Cycling Tip", "Electrical conductivity of the water is above the normal range — this can happen during cycling especially when ammonia and nitrites are spiking.\n\nMonitor regularly using the chemical test kit.", "OK");
+            }
+        }
+    }
+    private async void WarningTempTapped(object sender, EventArgs e)
+    {
+        Console.WriteLine("WarningTempTapped triggered");
+
+        if (TempRange[0]) // temperature is too low
+        {
+            await DisplayAlert("Warning", "Water temperature is too low! Check heater is functioning and make sure tank is not in a drafty location.", "OK");
+        }
+        else if (TempRange[1]) // temperature is too high
+        {
+            await DisplayAlert("Warning", "Water temperature is too high! Check heater is functioning correctly and make sure tank is not in direct sunlight.", "OK");
+        }
+        
     }
 
 
@@ -369,6 +463,14 @@ public partial class Parameters : ContentPage
                 LastPopupTime = DateTime.Now;
             }
 
+        }
+        else if (_mode == Mode.Maintenance)
+        {
+            if ((DateTime.Now - LastPopupTime).TotalDays >= 21)
+            {
+                DisplayAlert("Reminder", "It's time to do a 25% water change.", "OK");
+                LastPopupTime = DateTime.Now;
+            }
         }
     }
 

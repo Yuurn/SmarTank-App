@@ -2374,3 +2374,12 @@ C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-android\stamp
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Owner\Source\Repos\SmarTank-App\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\warning.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\res\xml\network_security_config.xml
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\warning.png
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\colorsensor.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\phwaterlevel.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\tdswaterlevel.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\tempwaterlevel.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\phwaterleveltwo.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\tdswaterleveltwo.jpg
+C:\Users\kvond\source\repos\APP_SMARTANK\SmarTank\obj\Debug\net9.0-android\resizetizer\r\drawable\tempwaterleveltwo.jpg

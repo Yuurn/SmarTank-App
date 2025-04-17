@@ -20,7 +20,7 @@ public partial class TestingLog : ContentPage
         {
             var selectedOption = picker.SelectedItem.ToString();
             var currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-            var key = "SelectedOption_"+ picker.StyleId + currentDate;
+            var key = ""+ picker.StyleId + currentDate;
 
             // Save the selected option with the date
             Preferences.Set(key, selectedOption);
@@ -34,7 +34,7 @@ public partial class TestingLog : ContentPage
                 Preferences.Set(KeysListKey, string.Join(",", keys));
             }
 
-            DisplayAlert("Selected Option", $"You selected: {selectedOption} on {currentDate}", "OK");
+            DisplayAlert("Selected Option", $" {selectedOption} on {currentDate}", "OK");
         }
     }
     private void OnViewPreviousSelectionsClicked1(object sender, EventArgs e)
@@ -67,7 +67,7 @@ public partial class TestingLog : ContentPage
         {
             if (!string.IsNullOrEmpty(key) && key.Contains(pickerId))
             {
-                var date = key.Replace("SelectedOption_" + pickerId + "_", "");
+                var date = key.Replace("" + pickerId + "_", "");
                 var option = Preferences.Get(key, "No option selected");
                 savedOptions.Add($"{date}: {option}");
             }
@@ -87,7 +87,7 @@ public partial class TestingLog : ContentPage
         {
             if (!string.IsNullOrEmpty(key))
             {
-                var date = key.Replace("SelectedOption_", "");
+                var date = key.Replace("", "");
                 var option = Preferences.Get(key, "No option selected");
                 savedOptions.Add($"{date}: {option}");
             }

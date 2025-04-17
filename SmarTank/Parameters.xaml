@@ -17,13 +17,29 @@
                 <BoxView Color="LightBlue" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
                 <Label x:Name="TemperatureLabel" FontSize="Large" TextColor="DarkBlue" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
-                <Image Source="warning.jpg"
-                    x:Name= "phWarning"
-                    IsVisible="False">
+                <!-- warning image -->
+                <Image Source="warning.png"
+                         x:Name="tempWarning"
+                         IsVisible="False"
+                         HorizontalOptions="End"
+                         VerticalOptions="Center"
+                         HeightRequest="50"
+                         WidthRequest="50"
+                         Margin="5,0,50,0">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="WarningPHTapped" />
+                        <TapGestureRecognizer Tapped="WarningTempTapped" />
                     </Image.GestureRecognizers>
                 </Image>
+                <!--tap for details under the image -->
+                <Label Text="Tap for details"
+                         x:Name="tempWarningLabel"
+                         IsVisible="False"
+                         FontSize="15"
+                         TextColor="DarkRed"
+                         HorizontalOptions="End"
+                         VerticalOptions="Center"
+                         Margin="0,70,20,10"/>
+
             </Grid>
            
             <Label Text="pH:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center" />
@@ -31,6 +47,28 @@
                 <BoxView Color="LightGreen" HeightRequest="50" WidthRequest="100" CornerRadius="10" />
                 <Label x:Name="PHLabel"  FontSize="Large" TextColor="DarkGreen" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
+                <!-- warning image -->
+                <Image Source="warning.png"
+                       x:Name="phWarning"
+                       IsVisible="False"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="5,0,50,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="WarningPHTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!--tap for details under the image -->
+                <Label Text="Tap for details"
+                       x:Name="phWarningLabel"
+                       IsVisible="False"
+                       FontSize="15"
+                       TextColor="DarkRed"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Margin="0,70,20,10"/>
             </Grid>
 
             <Label Text="Total Dissolved Solids:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center" />
@@ -38,6 +76,28 @@
                 <BoxView Color="LightCoral" HeightRequest="50" WidthRequest="150" CornerRadius="10" />
                 <Label x:Name="TDSLabel"  FontSize="Large" TextColor="DarkRed" FontAttributes="Bold" 
                    HorizontalOptions="Center" VerticalOptions="Center" />
+                <!-- warning image -->
+                <Image Source="warning.png"
+                       x:Name="tdsWarning"
+                       IsVisible="False"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="5,0,40,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="WarningTDSTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!--tap for details under the image -->
+                <Label Text="Tap for details"
+                       x:Name="tdsWarningLabel"
+                       IsVisible="False"
+                       FontSize="15"
+                       TextColor="DarkRed"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Margin="0,70,5,10"/>
             </Grid>
 
             <Label Text="Conductivity:" FontSize="Large" Margin="0,50,0,10" HorizontalOptions="Center"/>
@@ -45,6 +105,28 @@
                 <BoxView Color="LightGoldenrodYellow" HeightRequest="50" WidthRequest="170" CornerRadius="10" />
                 <Label x:Name="ConductivityLabel" FontSize="Large" TextColor="DarkGoldenrod" FontAttributes="Bold" 
             HorizontalOptions="Center" VerticalOptions="Center" />
+                <!-- warning image -->
+                <Image Source="warning.png"
+                       x:Name="condWarning"
+                       IsVisible="False"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       Margin="5,0,30,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="WarningCondTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!--tap for details under the image -->
+                <Label Text="Tap for details"
+                       x:Name="condWarningLabel"
+                       IsVisible="False"
+                       FontSize="15"
+                       TextColor="DarkRed"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Margin="0,70,0,10"/>
             </Grid>
 
         </StackLayout>

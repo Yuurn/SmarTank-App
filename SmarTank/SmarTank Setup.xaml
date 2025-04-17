@@ -37,7 +37,7 @@
             <!-- Image for the pH sensor setup-->
             <BoxView Grid.Column="1" Grid.Row="0" Color="LightCyan" VerticalOptions="FillAndExpand" />
             <Image Grid.Column="1" Grid.Row="0"
-                   Source="ph.jpg"
+                   Source="phwaterleveltwo.jpg"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
 
@@ -55,14 +55,14 @@
             <!-- Image for the TDS sensor setup-->
             <BoxView Grid.Row="1" Grid.Column="1" Color="cyan" VerticalOptions="FillAndExpand" />
             <Image Grid.Column="1" Grid.Row="1"
-                   Source="tds.jpg"
+                   Source="tdswaterleveltwo.jpg"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"  />
 
             <!-- Box and Label for Temperature Sensor Setup -->
             <BoxView Grid.Row="2" Grid.Column="0" Color="Turquoise" VerticalOptions="FillAndExpand" />
             <Label Grid.Row="2" Grid.Column="0"
-                   Text="Temperature Sensor Setup: Ensure entire silver tip is in contact with water."
+                   Text="Temperature Sensor Setup: Entire silver tip is in contact with water."
                    HorizontalOptions="Center"
                    VerticalOptions="Center" 
                    FontSize="20"
@@ -72,7 +72,7 @@
             <!-- Image for the temp sensor setup-->
             <BoxView Grid.Row="2" Grid.Column="1" Color="Turquoise" VerticalOptions="FillAndExpand" />
             <Image Grid.Column="1" Grid.Row="2"
-                   Source="temp.jpg"
+                   Source="tempwaterleveltwo.jpg"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"  />
 
@@ -87,8 +87,8 @@
                    Margin = "10,10"/>      
 
             <BoxView Grid.Row="3" Grid.Column="1" Color="DodgerBlue" VerticalOptions="FillAndExpand" />
-            <Label Grid.Row="3" Grid.Column="1"
-                   Text="Image of Color Sensor"
+            <Image Grid.Row="3" Grid.Column="1"
+                   Source ="colorsensor.jpg"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
         </Grid>
